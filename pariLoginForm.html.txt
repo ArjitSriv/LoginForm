@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>login form</title>
+</head>
+<body bgcolor="pink">
+<h1 text align="center">ADMIN LOGIN FORM</h1>
+<form>
+<table>
+<tr>
+<p style="text-align:center;">UserName:
+<input id="username" type="text" placeholder="User Name" name=""/></p>
+</tr>
+<tr>
+<p style="text-align:center;">password:
+<input id="password" type="text" placeholder="Password" name=""/></p>
+<br>
+</tr>
+<p style="text-align:center;">
+<button onclick="myFunction()" id="submit">
+<a href="">Submit
+</a>
+</button>
+</p>
+</table>
+</form>
+<script>
+function myFunction(){
+if(document.getElementById("username").value=="Akshara" &&
+document.getElementById("password").value=="12345"){
+document.getElementById("submit").href="./welcomePage.html";
+}
+else{
+alert("Invalid credentials");
+}
+}
+</script>
+</body>
+</html>
+</html>
